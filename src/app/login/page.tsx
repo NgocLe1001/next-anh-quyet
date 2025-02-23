@@ -25,7 +25,7 @@ export default function Login() {
         if (rs.data.token) {
             LocalStorageHelper.setItem(TOKEN_KEY, rs.data.token);
             document.cookie = `token=${TOKEN_KEY}; path=/`;
-            router.replace("/home");
+            router.replace("/");
         }
     }
 
